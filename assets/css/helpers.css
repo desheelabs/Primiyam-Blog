@@ -1,0 +1,352 @@
+/**
+ * Additional Helper CSS
+ * Utility classes and improvements
+ * 
+ * @package Primiyam_Blog
+ */
+
+/* Screen Reader Text */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    clip-path: none;
+    color: #21759b;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 700;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+}
+
+/* Skip Link */
+.skip-link {
+    background-color: #f1f1f1;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    left: -9999em;
+    outline: none;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    text-transform: none;
+    top: -9999em;
+}
+
+.skip-link:focus {
+    clip: auto;
+    height: auto;
+    left: 6px;
+    top: 7px;
+    width: auto;
+    z-index: 100000;
+}
+
+/* Alignments */
+.alignleft {
+    float: left;
+    margin-right: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.alignright {
+    float: right;
+    margin-left: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5em;
+}
+
+/* Clearings */
+.clear::before,
+.clear::after,
+.entry-content::before,
+.entry-content::after,
+.comment-content::before,
+.comment-content::after,
+.site-header::before,
+.site-header::after,
+.site-content::before,
+.site-content::after,
+.site-footer::before,
+.site-footer::after {
+    content: "";
+    display: table;
+    table-layout: fixed;
+}
+
+.clear::after,
+.entry-content::after,
+.comment-content::after,
+.site-header::after,
+.site-content::after,
+.site-footer::after {
+    clear: both;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: var(--transition);
+    z-index: 999;
+}
+
+.back-to-top.show {
+    display: flex;
+}
+
+.back-to-top:hover {
+    background: var(--secondary-color);
+    transform: translateY(-5px);
+}
+
+/* Sticky Post */
+.sticky {
+    border-left: 4px solid var(--primary-color);
+}
+
+.sticky .entry-title::before {
+    content: "📌 ";
+}
+
+/* Post Formats */
+.format-aside .entry-title::before {
+    content: "💭 ";
+}
+
+.format-quote .entry-title::before {
+    content: "💬 ";
+}
+
+.format-video .entry-title::before {
+    content: "🎥 ";
+}
+
+.format-audio .entry-title::before {
+    content: "🎵 ";
+}
+
+.format-image .entry-title::before {
+    content: "🖼️ ";
+}
+
+.format-gallery .entry-title::before {
+    content: "📷 ";
+}
+
+.format-link .entry-title::before {
+    content: "🔗 ";
+}
+
+/* Blockquotes */
+blockquote {
+    margin: 1.5em 0;
+    padding: 1em 1.5em;
+    border-left: 4px solid var(--primary-color);
+    background: var(--light-color);
+    font-style: italic;
+}
+
+blockquote p {
+    margin-bottom: 0.5em;
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    color: var(--text-color);
+    font-style: normal;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    margin-bottom: 1.5em;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    text-align: left;
+}
+
+table th {
+    background: var(--light-color);
+    font-weight: 600;
+}
+
+table tr:nth-child(even) {
+    background: rgba(0,0,0,0.02);
+}
+
+/* Code Blocks */
+pre {
+    background: #2d2d2d;
+    color: #f8f8f2;
+    padding: 1.5em;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin-bottom: 1.5em;
+}
+
+code {
+    background: var(--light-color);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+}
+
+pre code {
+    background: transparent;
+    padding: 0;
+}
+
+/* Lists */
+.entry-content ul,
+.entry-content ol {
+    margin-left: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.entry-content ul {
+    list-style: disc;
+}
+
+.entry-content ol {
+    list-style: decimal;
+}
+
+.entry-content li {
+    margin-bottom: 0.5em;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 1.5em;
+}
+
+.gallery-item {
+    margin: 0;
+}
+
+.gallery-caption {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Buttons */
+.wp-block-button__link,
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: var(--primary-color);
+    color: var(--white);
+    border-radius: 4px;
+    font-weight: 600;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.wp-block-button__link:hover,
+.button:hover {
+    background: var(--secondary-color);
+    color: var(--white);
+}
+
+/* No Results */
+.no-results {
+    text-align: center;
+    padding: 60px 30px;
+    background: var(--white);
+    border-radius: 8px;
+}
+
+/* Loading Spinner */
+.loading {
+    text-align: center;
+    padding: 40px;
+}
+
+.loading::after {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 4px solid var(--light-color);
+    border-top-color: var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Print Styles */
+@media print {
+    .site-header,
+    .main-navigation,
+    .sidebar,
+    .site-footer,
+    .back-to-top,
+    .comment-form {
+        display: none !important;
+    }
+    
+    .content-area {
+        grid-template-columns: 1fr !important;
+    }
+    
+    a {
+        text-decoration: underline;
+    }
+}

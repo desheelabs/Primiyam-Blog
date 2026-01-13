@@ -1,0 +1,143 @@
+# PRIMIYAM BLOG THEME - QUICK START GUIDE
+
+## WordPress Mein Theme Install Kaise Karein
+
+### Step 1: Theme Upload Karein
+1. WordPress Admin Panel mein login karein
+2. **Appearance > Themes** par jayein
+3. **Add New** button par click karein
+4. **Upload Theme** button par click karein
+5. Theme ka ZIP file select karein
+6. **Install Now** par click karein
+7. **Activate** par click karein
+
+### Step 2: Theme Setup (Zaroori!)
+
+#### A. Logo Upload Karein
+1. **Appearance > Customize** par jayein
+2. **Site Identity** par click karein
+3. **Select Logo** par click karein
+4. Apna logo upload karein (Recommended size: 400x100px)
+
+#### B. Menu Create Karein
+1. **Appearance > Menus** par jayein
+2. Menu name daalein (e.g., "Main Menu")
+3. **Create Menu** par click karein
+4. Pages/Categories add karein
+5. **Display location** mein **Primary Menu** select karein
+6. **Save Menu** par click karein
+
+#### C. Widgets Add Karein
+1. **Appearance > Widgets** par jayein
+2. **Sidebar** mein widgets add karein:
+   - Search
+   - Recent Posts
+   - Categories
+   - Tags
+3. **Footer 1, 2, 3** mein bhi widgets add kar sakte hain
+
+#### D. Colors Customize Karein
+1. **Appearance > Customize** par jayein
+2. **Theme Colors** par click karein
+3. Primary aur Secondary colors choose karein
+4. **Publish** par click karein
+
+#### E. Social Media Links
+1. **Appearance > Customize** par jayein
+2. **Social Media Links** par click karein
+3. Facebook, Twitter, Instagram URLs daalein
+4. **Publish** par click karein
+
+### Step 3: Posts Create Karein
+
+1. **Posts > Add New** par jayein
+2. Post title aur content likhein
+3. **Featured Image** set karein (Recommended: 1200x600px)
+4. Category select karein
+5. Tags add karein
+6. **Publish** par click karein
+
+### Important Notes:
+
+✓ **Featured Images Zaroori Hain:** Har post mein featured image zaroor add karein warna theme theek se nahi dikhega
+✓ **Menu Setup:** Menu setup karna zaroori hai warna default links dikhenge
+✓ **Recommended Plugins:**
+  - Yoast SEO (SEO ke liye)
+  - Contact Form 7 (Contact form ke liye)
+  - Akismet (Spam protection)
+
+### Agar Theme Theek Se Nahi Dikh Raha:
+
+1. Browser cache clear karein (Ctrl + F5)
+2. WordPress Settings > Permalinks mein jayein aur **Save Changes** par click karein
+3. Check karein ki aapne menu assign kiya hai ya nahi
+4. Check karein ki posts mein featured images hain ya nahi
+
+### Colors Change Karne Ke Liye:
+
+Default Colors:
+- Primary: #2c3e50 (Dark Blue-Gray)
+- Secondary: #3498db (Blue)
+
+Customize karne ke liye: **Appearance > Customize > Theme Colors**
+
+### Support:
+
+Agar koi problem ho to:
+1. README.txt file padhein
+2. All plugins temporarily disable karein
+3. Check karein ki WordPress aur PHP updated hain
+
+---
+
+## CodeCanyon Ke Liye Ready Kaise Karein:
+
+1. **Screenshot.png** add karein (1200x900px)
+2. **Documentation** complete karein
+3. Theme ko test karein different WordPress versions par
+4. All files ko ek ZIP file mein compress karein
+5. CodeCanyon par upload karein
+
+---
+
+## File Structure:
+
+```
+primiyam-blog/
+├── assets/
+│   ├── css/
+│   │   └── main.css
+│   └── js/
+│       └── main.js
+├── 404.php
+├── archive.php
+├── comments.php
+├── footer.php
+├── functions.php
+├── header.php
+├── index.php
+├── searchform.php
+├── sidebar.php
+├── single.php
+├── style.css
+├── README.txt
+└── screenshot.png (Required!)
+```
+
+---
+
+## Recommended Settings:
+
+### Reading Settings:
+- **Settings > Reading**
+- Blog pages show at most: 10 posts
+- For each article show: Summary
+
+### Permalink Settings:
+- **Settings > Permalinks**
+- Select: Post name
+- Click Save Changes
+
+---
+
+Thank you for using Primiyam Blog Theme!

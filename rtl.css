@@ -1,0 +1,92 @@
+/*
+Theme Name: Primiyam Blog
+Description: RTL (Right-to-Left) stylesheet for languages like Arabic, Hebrew, etc.
+*/
+
+body {
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+/* Header */
+.header-top-inner {
+    flex-direction: row-reverse;
+}
+
+.header-social-links {
+    flex-direction: row-reverse;
+}
+
+.site-branding {
+    flex-direction: row-reverse;
+}
+
+/* Navigation */
+.primary-menu {
+    flex-direction: row-reverse;
+}
+
+.primary-menu ul {
+    left: auto;
+    right: 0;
+}
+
+.primary-menu ul a:hover {
+    padding-left: 20px;
+    padding-right: 25px;
+}
+
+/* Content */
+.content-area {
+    grid-template-columns: 350px 1fr;
+}
+
+.entry-meta {
+    flex-direction: row-reverse;
+}
+
+/* Sidebar */
+.widget ul li a:hover {
+    padding-left: 0;
+    padding-right: 5px;
+}
+
+.widget-title::before {
+    left: auto;
+    right: 0;
+}
+
+/* Footer */
+.footer-widgets {
+    direction: rtl;
+}
+
+/* Search Form */
+.search-form {
+    flex-direction: row-reverse;
+}
+
+.search-field {
+    border-radius: 0 4px 4px 0;
+}
+
+.search-submit {
+    border-radius: 4px 0 0 4px;
+}
+
+/* Pagination */
+.pagination {
+    flex-direction: row-reverse;
+}
+
+/* Comments */
+.comment-list {
+    padding-right: 0;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .content-area {
+        grid-template-columns: 1fr;
+    }
+}

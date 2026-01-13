@@ -1,0 +1,63 @@
+LICENSE
+
+Primiyam Blog WordPress Theme
+Copyright (C) 2026
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+================================================================================
+
+THIRD PARTY RESOURCES
+
+Bootstrap Icons
+Licensed under MIT License
+Source: https://icons.getbootstrap.com/
+
+System Fonts
+Licensed under their respective licenses
+
+================================================================================
+
+THEME SPECIFIC LICENSE
+
+This theme can be used for:
+✓ Personal websites
+✓ Client projects
+✓ Commercial websites
+
+This theme cannot be:
+✗ Resold as a theme
+✗ Redistributed without permission
+✗ Used in theme/template marketplaces without authorization
+
+For commercial licensing or redistribution rights, please contact the author.
+
+================================================================================
+
+SUPPORT & UPDATES
+
+For support, documentation, and updates, please visit:
+- Theme Documentation: Included in README.txt
+- Support Forum: [Your Support URL]
+- Updates: Available through WordPress dashboard
+
+================================================================================
+
+CREDITS
+
+Developed by: [Your Name]
+Website: [Your Website URL]
+Email: [Your Email]
+
+================================================================================

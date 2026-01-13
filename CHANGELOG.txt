@@ -1,0 +1,102 @@
+# CHANGELOG
+
+All notable changes to Primiyam Blog theme will be documented in this file.
+
+## [1.0.0] - 2026-01-13
+
+### Added
+- Initial release
+- Clean and minimal design
+- Responsive layout (mobile, tablet, desktop)
+- Custom header with logo support
+- Custom background support
+- Primary navigation menu with dropdown support
+- Widget-ready sidebar
+- 3 footer widget areas
+- Post thumbnail/featured image support
+- Custom colors (primary and secondary)
+- Social media links integration
+- Sticky header
+- Search functionality
+- Custom 404 page
+- Archive pages (category, tag, date)
+- Single post layout
+- Page template
+- Comment system with threaded comments
+- Translation ready (.pot file included)
+- RTL (Right-to-Left) language support
+- SEO optimized structure
+- Fast loading performance
+- Cross-browser compatibility
+- Customizer options for:
+  - Site logo
+  - Site colors
+  - Header text
+  - Social media links
+  - Footer text
+- Clean, valid HTML5 code
+- Accessibility ready
+- GPL v2 licensed
+
+### Features
+- Modern card-based blog layout
+- Smooth hover animations
+- Clean typography
+- Responsive images
+- Mobile-friendly navigation
+- Back to top button
+- Reading progress bar (on single posts)
+- Lazy loading images
+- Optimized CSS and JavaScript
+- No jQuery dependencies for core functionality
+- Developer-friendly code structure
+
+### Compatibility
+- WordPress 5.0+
+- PHP 7.4+
+- All modern browsers
+- Mobile devices
+- Tablet devices
+
+### Documentation
+- Complete installation guide
+- Customization instructions
+- Widget setup guide
+- Menu configuration guide
+- Translation guide
+
+---
+
+## Future Updates (Planned)
+
+### [1.1.0] - Coming Soon
+- [ ] Additional page templates
+- [ ] Custom widgets
+- [ ] More customizer options
+- [ ] Dark mode support
+- [ ] Additional color schemes
+- [ ] Performance improvements
+
+### [1.2.0] - Future
+- [ ] WooCommerce compatibility
+- [ ] Elementor support
+- [ ] Gutenberg block styles
+- [ ] Additional header layouts
+- [ ] Mega menu support
+
+---
+
+## Support
+
+For support and bug reports:
+- Email: [your-email@example.com]
+- Documentation: See README.txt
+- Support Forum: [Your support URL]
+
+---
+
+## Credits
+
+Theme developed by: [Your Name]
+Bootstrap Icons for SVG icons
+System fonts for typography
