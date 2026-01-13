@@ -625,7 +625,7 @@ function primiyam_get_latest_github_release() {
         return $release;
     }
 
-    set_transient($cache_key, $release, 6 * HOUR_IN_SECONDS);
+    set_transient($cache_key, $release, 10 * MINUTE_IN_SECONDS);
     return $release;
 }
 
