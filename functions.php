@@ -622,7 +622,24 @@ function primiyam_get_latest_github_release() {
 
     $release = primiyam_github_request('https://api.github.com/repos/desheelabs/Primiyam-Blog/releases/latest');
     if (is_wp_error($release)) {
-        return $release;
+        $data = $release->get_error_data();
+        $status = is_array($data) && isset($data['status']) ? (int) $data['status'] : 0;
+        if ($status !== 404) {
+            return $release;
+        }
+
+        $tags = primiyam_github_request('https://api.github.com/repos/desheelabs/Primiyam-Blog/tags?per_page=1');
+        if (is_wp_error($tags) || empty($tags[0]['name'])) {
+            return $release;
+        }
+
+        $tag = (string) $tags[0]['name'];
+        $release = array(
+            'tag_name'    => $tag,
+            'html_url'    => 'https://github.com/desheelabs/Primiyam-Blog/tree/' . rawurlencode($tag),
+            'zipball_url' => 'https://github.com/desheelabs/Primiyam-Blog/archive/refs/tags/' . rawurlencode($tag) . '.zip',
+            'body'        => 'Git tag update.',
+        );
     }
 
     set_transient($cache_key, $release, 10 * MINUTE_IN_SECONDS);
