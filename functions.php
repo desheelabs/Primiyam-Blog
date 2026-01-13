@@ -735,3 +735,23 @@ function primiyam_upgrader_source_selection($source, $remote_source, $upgrader) 
     return $source;
 }
 add_filter('upgrader_source_selection', 'primiyam_upgrader_source_selection', 10, 3);
+
+function primiyam_force_theme_update_check() {
+    if (!is_admin()) {
+        return;
+    }
+    if (!current_user_can('manage_options')) {
+        return;
+    }
+    if (empty($_GET['primiyam_force_update_check'])) {
+        return;
+    }
+
+    delete_transient('primiyam_github_latest_release');
+    delete_site_transient('update_themes');
+    wp_update_themes();
+
+    wp_safe_redirect(remove_query_arg('primiyam_force_update_check'));
+    exit;
+}
+add_action('admin_init', 'primiyam_force_theme_update_check');
